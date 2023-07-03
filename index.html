@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Protein Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1>Protein Calculator</h1>
+    <form id="proteinCalculator">
+      <fieldset>
+        <legend>คุณอาจกินโปรตีนไม่ถึง</legend>
+        <label for="weight">Weight (kg):</label>
+        <input type="text" id="weight" required />
+        <label for="proteinFactor">Protein Factor: (g/kg/day)</label>
+        <select id="proteinFactor" required>
+          <option value="0.8">Least minimum == 0.8</option>
+          <option value="1.0">Sedentary but healthy == 1.0</option>
+          <option value="1.3">Active individuals == 1.3</option>
+          <option value="1.5">Sick or injured person == 1.5</option>
+          <option value="1.7">Intense physical activity == 1.7</option>
+          <option value="1.7">Pregnant == 1.7</option>
+          <option value="2.0">More muscle, less fat == 2.0</option>
+        </select>
+        <button type="submit">Calculate</button>
+      </fieldset>
+    </form>
+
+    <div id="result" class="hidden"></div>
+
+    <section>
+      <h1>Further Reading:</h1>
+
+      <h3>1:</h3>
+      <p>
+        <cite
+          >Recommended dietary allowance (RDA) is subset of Dietary reference
+          intakes (DRIs)</cite
+        >
+      </p>
+      <blockquote>
+        <a
+          href="https://health.gov/our-work/nutrition-physical-activity/dietary-guidelines/dietary-reference-intakes"
+          target="_blank"
+          >https://health.gov/our-work/nutrition-physical-activity/dietary-guidelines/dietary-reference-intakes</a
+        >
+      </blockquote>
+
+      <h3>2:</h3>
+      <p>
+        <cite
+          >The table of RDA recommended. The average is around 0.8
+          g/kg/day</cite
+        >
+      </p>
+      <blockquote>
+        <a
+          href="https://nap.nationalacademies.org/read/11537/chapter/14"
+          target="_blank"
+          >https://nap.nationalacademies.org/read/11537/chapter/14</a
+        >
+      </blockquote>
+
+      <h3>3:</h3>
+      <p>
+        <cite
+          >"The RDA is the amount of a nutrient you need to meet your basic
+          nutritional requirements. In a sense, it's the minimum amount you need
+          to keep from getting sick"</cite
+        >
+      </p>
+      <blockquote>
+        <a
+          href="https://www.health.harvard.edu/blog/how-much-protein-do-you-need-every-day-201506188096"
+          target="_blank"
+          >https://www.health.harvard.edu/blog/how-much-protein-do-you-need-every-day-201506188096</a
+        >
+      </blockquote>
+
+      <h3>4:</h3>
+      <p>
+        <cite
+          >"A recent position statement from the Academy of Nutrition and
+          Dietetics, Dieticians of America, and the American College of Sports
+          Medicine summarizes the evidence for numerous sports nutrition
+          recommendations including dietary protein intake. The current data
+          suggests that physically active individuals should consume 1.2 to 2.0
+          grams per kilogram of body weight"</cite
+        >
+      </p>
+      <blockquote>
+        <a
+          href="https://www.canr.msu.edu/news/protein_intake_for_athletes"
+          target="_blank"
+          >https://www.canr.msu.edu/news/protein_intake_for_athletes</a
+        >
+      </blockquote>
+
+      <h3>5:</h3>
+      <p>
+        <cite
+          >"To meet the functional needs such as promoting skeletal-muscle
+          protein accretion and physical strength, dietary intake of 1.0, 1.3,
+          and 1.6 g protein per kg BW per day is recommended for individuals
+          with minimal, moderate, and intense physical activity,
+          respectively."</cite
+        >
+      </p>
+      <blockquote>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/26797090/" target="_blank"
+          >https://pubmed.ncbi.nlm.nih.gov/26797090/</a
+        >
+      </blockquote>
+
+      <h3>Long Read:</h3>
+      <blockquote>
+        <a href="https://examine.com/guides/protein-intake/" target="_blank"
+          >https://examine.com/guides/protein-intake/</a
+        >
+      </blockquote>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
