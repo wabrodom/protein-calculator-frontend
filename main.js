@@ -1,3 +1,5 @@
+const url = "https://food-protein-api.onrender.com/api";
+
 document
   .getElementById("proteinCalculator")
   .addEventListener("submit", function (event) {
