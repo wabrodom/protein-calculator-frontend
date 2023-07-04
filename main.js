@@ -104,10 +104,10 @@ document.addEventListener("DOMContentLoaded", () => {
       sumResult.textContent =
         message +
         sum.toFixed(2) +
-        " grams\n" +
+        " grams.\n" +
         `It's greater than the goal by ${(sum - goalProtein).toFixed(2)}`;
     } else {
-      message = " gram protein is less than recommendation ";
+      message = " gram protein is less than recommendation by ";
       sumResult.textContent =
         sum.toFixed(2) +
         message +
@@ -116,3 +116,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+function toggleHiddenText() {
+  const hiddenText = document.querySelector(".hidden-text");
+  const readMore = document.querySelector(".read-more");
+
+  if (hiddenText.style.display === "none") {
+    hiddenText.style.display = "inline";
+    readMore.textContent = "Less... ";
+  } else {
+    hiddenText.style.display = "none";
+    readMore.textContent = "More...";
+  }
+}

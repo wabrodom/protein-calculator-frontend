@@ -1,6 +1,23 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
 }
 
 h1 {
@@ -20,7 +37,7 @@ label {
   margin-bottom: 5px;
 }
 
-input[type='number'] {
+input[type="number"] {
   width: 100%;
   padding: 5px;
 }
@@ -31,6 +48,19 @@ button {
   padding: 5px 10px;
 }
 
+.center {
+  margin: 5px auto;
+}
+
+.descriptive {
+  align-items: center;
+}
+
+.calculator {
+  text-align: center;
+  flex-basis: 100%;
+}
+
 .show-result {
   text-align: center;
   margin: 20px;
@@ -39,6 +69,13 @@ button {
   color: salmon;
 }
 
-.hidden {
+/* functionality */
+.hidden,
+.hidden-text {
   display: none;
+}
+
+.read-more {
+  color: blue;
+  cursor: pointer;
 }
