@@ -43,7 +43,9 @@ document.addEventListener("DOMContentLoaded", () => {
       table.appendChild(tableHeader);
 
       // Populate table rows with data
-      keys.forEach((key) => {
+      for (let i = 0; i < keys.length - 1; i++) {
+        const key = keys[i];
+
         const rowData = data[key];
         const row = document.createElement("tr");
 
@@ -73,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const loading = document.querySelector("#loadingSign");
         loading.classList.add("hidden");
-      });
+      }
     })
     .catch((error) => {
       console.error("Got error", error);
