@@ -20,3 +20,5 @@ https://github.com/wabrodom/protein-uptake-calculator
 **Food Protein API:** https://github.com/wabrodom/food-protein-api
 
 **Slow Life Tetris :** https://github.com/wabrodom/tetris-for-slow-life
+
+**RiD Chrome Extension :** https://github.com/wabrodom/RiD-chrome-extension
