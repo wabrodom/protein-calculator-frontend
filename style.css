@@ -2,6 +2,7 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  font-size: 16px;
 }
 *,
 *:before,
@@ -9,6 +10,32 @@ html {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit;
+  font-size: 16px;
+}
+
+/* fluid text */
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 22px;
+  }
+}
+
+/* default mobile first */
+body > * {
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+@media screen and (min-width: 1000px) {
+  body > * {
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
 }
 
 body {
@@ -61,12 +88,16 @@ button {
   flex-basis: 100%;
 }
 
+.protein-data > * {
+  margin: 0 auto;
+}
+
 .show-result {
   text-align: center;
   margin: 20px;
   font-weight: bold;
   font-size: 32px;
-  color: salmon;
+  color: #fa8072;
 }
 
 /* functionality */
@@ -76,6 +107,11 @@ button {
 }
 
 .read-more {
-  color: blue;
+  color: #00f;
   cursor: pointer;
+}
+
+.highlight td {
+  border: 2px solid #777;
+  background-color: #fafad2;
 }

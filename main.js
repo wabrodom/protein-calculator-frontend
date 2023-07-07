@@ -99,6 +99,8 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!isNaN(protein) && !isNaN(amount)) {
         sum += protein * amount;
       }
+      // higtlight row
+      rows[i].classList.toggle("highlight", !isNaN(amount));
     }
     if (sum > goalProtein) {
       sumResult.textContent =
